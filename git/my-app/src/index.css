@@ -49,3 +49,18 @@ ol, ul {
   margin-left: 20px;
 }
 
+.game-title {
+  margin-left: 0px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.game-descr {
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.restart-info {
+  margin-left: 20px;
+}
+

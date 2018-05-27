@@ -49,6 +49,10 @@ class Board extends React.Component {
 class Game extends React.Component {
   constructor(props) {
       super(props);
+
+      this.name = this.props.name;
+      this.descr = this.props.descr;
+
       this.state = {
           history: [{
               squares: Array(9).fill(null),
@@ -110,6 +114,9 @@ class Game extends React.Component {
     }
 
     return (
+      <div>
+      <div className="game-title">{this.name}</div>
+      <div className="game-descr">{this.descr}</div>
       <div className="game">
         <div className="game-board">
           <Board 
@@ -126,6 +133,7 @@ class Game extends React.Component {
         </div>
       
       </div>
+      </div>
     );
   }
 }
@@ -133,7 +141,7 @@ class Game extends React.Component {
 // ========================================
 
 ReactDOM.render(
-  <Game />,
+  <Game name='Tic Tac Toe Fun!' descr='Click on any empty square!'/>,
   document.getElementById('root')
 );
 
