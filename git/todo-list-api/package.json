@@ -1,0 +1,29 @@
+{
+  "name": "todo-list-api",
+  "version": "1.0.0",
+  "description": "A to do list API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "~/Documents/work/git"
+  },
+  "keywords": [
+    "to",
+    "do",
+    "list"
+  ],
+  "author": "Irina Concas",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2",
+    "postman": "^0.2.0"
+  }
+}

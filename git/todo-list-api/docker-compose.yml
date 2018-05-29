@@ -1,0 +1,10 @@
+version: "3"
+services:
+  todo-list-api:
+    build: .
+    ports:
+      - "3011:3001"
+  mongo:
+    image: mongo
+    ports:
+      - "3017:27017"
